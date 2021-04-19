@@ -1,0 +1,63 @@
+<html>
+	<head>
+		<title>Formulário</title>
+	</head>
+		<header><h1>CURSO DE HTML</h1>
+		</header>
+	<body>
+		<section>
+			<form method="post" action=recebe.php>
+				<fieldset>
+					<legend>Dados pessoais</legend>
+					Nome: <input type="text" name="nome" placeholder="Informe o seu nome" required><br>
+					CPF: <input type="text" name="CPF" placeholder="000.000.000-00" maxlength="14" pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}"><br> 
+					<label for="endereco">Endereço:</label> <textarea id="endereco" maxlength="100" name="endereco">Recanto das Emas</textarea><br>
+					<label for="homem">Homem</label>
+					<input type="radio" name="sexo" id="homem" value="homem">
+					<label for="mulher">Mulher</label>
+					<input type="radio" name="sexo" id="mulher" value="mulher"><br>
+					Qual sua cor favorita?<br>
+					<input type="color" name="cor">
+				</fieldset><br>
+			Data: <input type="date" name="date"><br>
+				<fieldset>
+					<legend>Entrada na Plataforma</legend>
+					Email: <input type="email" name="email"><br>
+					Senha: <input type="password" name="senha" placeholder="Somente números"><br>
+					<button type="submit">Login</button>
+					<button type="reset">Apagar Dados</button><br>
+				</fieldset>
+			<fieldset>
+			<legend>Preferências Gastronômicas</legend>
+					Qual comida você vai pedir?<br>
+					<input type="checkbox" name="chocolate" value="1">Chocolate<br>
+					<input type="checkbox" name="cerveja" value="1" checked>Cerveja<br>
+					<input type="checkbox" name="feijoada" value="1">Feijoada<br>
+					Qual comida você vai pedir?<br>
+					<input type="radio" name="comida" value="chocolate">Chocolate<br>
+					<input type="radio" name="comida" value="cerveja" checked>Cerveja<br>
+					<input type="radio" name="comida" value="feijoada">Feijoada<br>
+					Qual comida você vai pedir?<br>
+					<select name="comida">
+						<option value="chocolate">Chocolate</option>
+						<option value="cerveja">Cerveja</option>
+						<option value="feijoada">Feijoada</option><br>
+					</select><br>
+					Qual comida você vai pedir?<br>
+					<input list="comidas" name="comida"><br>
+					<datalist id="comidas">
+						<option value="Chocolate">
+						<option value="Cerveja">
+						<option value="Feijoada">
+					</datalist>
+				</fieldset>
+				<fieldset>
+					<legend>Avaliação</legend>
+					Você ficou satisfeito com a comida?<br>
+					<input type="range" name="faixa"><br>
+				</fieldset>
+			</form>
+		</section>
+		<footer></footer>
+	</body>
+</html>
